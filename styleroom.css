@@ -6,6 +6,7 @@ body {
     height: 100vh; 
     color:crimson;
     text-align: right;
+    cursor: pointer;
 }
 
 
@@ -16,6 +17,7 @@ body {
     left: 120px;
     bottom: 100px;
     text-align: center;
+    cursor: help;
      
 }
 
@@ -26,6 +28,7 @@ body {
     text-align:center;
     bottom: 60px;
     left: 760px;
+    cursor: help;
     
 }
 
@@ -36,6 +39,7 @@ body {
     text-align: center;
     bottom: 120px;
     left: 400px;
+    cursor: help;
     
 }
 
@@ -46,6 +50,7 @@ body {
     text-align: center;
     bottom: 140px;
     left: 880px;
+    cursor: help;
     
 }
 
@@ -56,7 +61,7 @@ body {
     text-align: center;
     bottom: 400px;
     left: 220px;
-    
+    cursor: help;
 }
 
 object {
@@ -223,7 +228,6 @@ object {
 	padding:7px;
 	width:120px;
 	font:0.9em verdana,arial;
-	text-transform:uppercase;
 	text-align:center;
 	color: black;
 	background-color: crimson;

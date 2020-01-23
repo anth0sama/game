@@ -85,8 +85,13 @@ h1 {
     text-align: center;
 }
 
-#aqua, .aqua {
-    background-color: aqua;
+#grey, .grey {
+    background-color: grey;
+    text-align: center;
+}
+
+#pink, .pink {
+    background-color: pink;
     text-align: center;
 }
 

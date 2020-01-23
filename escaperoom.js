@@ -106,3 +106,4 @@ function showMysteryPicture(booooox) {
 function Redirect() {
   window.location = "/game/room2.html";
 }
+
