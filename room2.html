@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="/game/styleroom2.css">
+  <script src="/game/mastermind.js"></script>
+  <title>Escape Room</title>
+</head>
+  <body onload="startGame()">
+    <object>
+    <embed src="/game/files/Saw Ultimate Theme Song.mp3" controller="false" autoplay="true" autostart="True" type="audio/mp3"/>
+    </object>
+
+    <div class="rules"><h1>Find the code to escape the room!</h1></div>
+    
+    <div id="gameDiv" style="clear:both">
+      <div id="code" style="clear:both">
+      <div class="pin hide"></div>
+      <div class="pin hide"></div>
+      <div class="pin hide"></div>
+      <div class="pin hide"></div>
+      <div class="pin hide"></div>
+      <div class="peg hide"></div>
+      <div class="peg hide"></div>
+      <div class="peg hide"></div>
+      <div class="peg hide"></div>
+      <div class="peg hide"></div>
+    </div>
+   
+    <div id="turn10" style="clear:both">
+      <div class="pin empty"></div>
+      <div class="pin empty"></div>
+      <div class="pin empty"></div>
+      <div class="pin empty"></div>
+      <div class="pin empty"></div>
+      <div class="peg empty"></div>
+      <div class="peg empty"></div>
+      <div class="peg empty"></div>
+      <div class="peg empty"></div>
+      <div class="peg empty"></div>
+    </div>
+    <div id="turn9" style="clear:both">
+      <div class="pin empty"></div>
+      <div class="pin empty"></div>
+      <div class="pin empty"></div>
+      <div class="pin empty"></div>
+      <div class="pin empty"></div>
+      <div class="peg empty"></div>
+      <div class="peg empty"></div>
+      <div class="peg empty"></div>
+      <div class="peg empty"></div>
+      <div class="peg empty"></div>
+    </div>
+    <div id="turn8" style="clear:both">
+      <div class="pin empty"></div>
+      <div class="pin empty"></div>
+      <div class="pin empty"></div>
+      <div class="pin empty"></div>
+      <div class="pin empty"></div>
+      <div class="peg empty"></div>
+      <div class="peg empty"></div>
+      <div class="peg empty"></div>
+      <div class="peg empty"></div>
+      <div class="peg empty"></div>
+    </div>
+    <div id="turn7" style="clear:both">
+      <div class="pin empty"></div>
+      <div class="pin empty"></div>
+      <div class="pin empty"></div>
+      <div class="pin empty"></div>
+      <div class="pin empty"></div>
+      <div class="peg empty"></div>
+      <div class="peg empty"></div>
+      <div class="peg empty"></div>
+      <div class="peg empty"></div>
+      <div class="peg empty"></div>
+    </div>
+    <div id="turn6" style="clear:both">
+      <div class="pin empty"></div>
+      <div class="pin empty"></div>
+      <div class="pin empty"></div>
+      <div class="pin empty"></div>
+      <div class="pin empty"></div>
+      <div class="peg empty"></div>
+      <div class="peg empty"></div>
+      <div class="peg empty"></div>
+      <div class="peg empty"></div>
+      <div class="peg empty"></div>
+    </div>
+    <div id="turn5" style="clear:both">
+      <div class="pin empty"></div>
+      <div class="pin empty"></div>
+      <div class="pin empty"></div>
+      <div class="pin empty"></div>
+      <div class="pin empty"></div>
+      <div class="peg empty"></div>
+      <div class="peg empty"></div>
+      <div class="peg empty"></div>
+      <div class="peg empty"></div>
+      <div class="peg empty"></div>
+    </div>
+    <div id="turn4" style="clear:both">
+      <div class="pin empty"></div>
+      <div class="pin empty"></div>
+      <div class="pin empty"></div>
+      <div class="pin empty"></div>
+      <div class="pin empty"></div>
+      <div class="peg empty"></div>
+      <div class="peg empty"></div>
+      <div class="peg empty"></div>
+      <div class="peg empty"></div>
+      <div class="peg empty"></div>
+    </div>
+    <div id="turn3" style="clear:both">
+      <div class="pin empty"></div>
+      <div class="pin empty"></div>
+      <div class="pin empty"></div>
+      <div class="pin empty"></div>
+      <div class="pin empty"></div>
+      <div class="peg empty"></div>
+      <div class="peg empty"></div>
+      <div class="peg empty"></div>
+      <div class="peg empty"></div>
+      <div class="peg empty"></div>
+    </div>
+    <div id="turn2" style="clear:both">
+      <div class="pin empty"></div>
+      <div class="pin empty"></div>
+      <div class="pin empty"></div>
+      <div class="pin empty"></div>
+      <div class="pin empty"></div>
+      <div class="peg empty"></div>
+      <div class="peg empty"></div>
+      <div class="peg empty"></div>
+      <div class="peg empty"></div>
+      <div class="peg empty"></div>
+    </div>
+    <div id="turn1" style="clear:both">
+      <div class="pin empty"></div>
+      <div class="pin empty"></div>
+      <div class="pin empty"></div>
+      <div class="pin empty"></div>
+      <div class="pin empty"></div>
+      <div class="peg empty"></div>
+      <div class="peg empty"></div>
+      <div class="peg empty"></div>
+      <div class="peg empty"></div>
+      <div class="peg empty"></div>
+    </div>
+  </div>
+  
+  <div id="controlDiv" style="clear:both">
+    <div id="black" class="pegSelector peg" onclick=selectPeg(this.id)></div>
+    <div id="red" class="pegSelector peg" onclick=selectPeg(this.id)>9</div>
+    <div id="blue" class="pegSelector peg" onclick=selectPeg(this.id)>6</div>
+    <div id="yellow" class="pegSelector peg" onclick=selectPeg(this.id)>4</div>
+    <div id="green" class="pegSelector peg" onclick=selectPeg(this.id)>2</div>
+    <div id="purple" class="pegSelector peg" onclick=selectPeg(this.id)>1</div>
+    
+    <div>
+      <div id="undoButton" class="buttons" onclick=unselectPeg()>  UNDO  </div>
+      <div id="submitButton" class="buttons" onclick=handleSolution()>  SUBMIT  </div>
+    </div>
+  </div>
+  
+  </body>
+  </html>

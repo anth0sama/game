@@ -1,0 +1,233 @@
+body {
+    background: url(/game/files/maxresdefault.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 100vh; 
+    color:crimson;
+    text-align: right;
+}
+
+
+.numberOne {
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    left: 120px;
+    bottom: 100px;
+    text-align: center;
+     
+}
+
+.numberTwo {
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    text-align:center;
+    bottom: 60px;
+    left: 760px;
+    
+}
+
+.numberThree {
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    text-align: center;
+    bottom: 120px;
+    left: 400px;
+    
+}
+
+.numberFour {
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    text-align: center;
+    bottom: 140px;
+    left: 880px;
+    
+}
+
+.numberFive {
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    text-align: center;
+    bottom: 400px;
+    left: 220px;
+    
+}
+
+object {
+    opacity: 0;
+}
+
+#compteur {
+    height: 60px;
+    width: 60px;
+    color:crimson;
+    font-size: 50px;
+    text-align: center;
+    position: absolute;
+    left: 650px;
+    background-color: black;
+}
+
+.mback {
+    position:relative;
+}
+
+
+.mtext {
+    display: block;
+    position: absolute;
+    z-index:10;
+    font-size:600%;
+    text-align:center;
+}
+
+.mtext2 {
+    display: block;
+    position: absolute;
+    z-index:10;
+    font-size:600%;
+    text-align:center;
+}
+
+.mtext3 {
+    display: block;
+    position: absolute;
+    z-index:10;
+    font-size:600%;
+    text-align:center;
+}
+
+.mtext4 {
+    display: block;
+    position: absolute;
+    z-index:10;
+    font-size:600%;
+    text-align:center;
+}
+
+.mtext5 {
+    display: block;
+    position: absolute;
+    z-index:10;
+    font-size:600%;
+    text-align:center;
+}
+
+.mbox {
+    display:none;
+    position:absolute;
+    z-index:11;
+    opacity:0.0;
+    filter: alpha(opacity=0);
+    bottom: 50px;
+    background-color:white ;
+}
+
+.mboox {
+    display:none;
+    position:absolute;
+    z-index:11;
+    opacity:0.0;
+    filter: alpha(opacity=0);
+    bottom: 200px;
+    left: 2px;
+    background-color:white ;
+}
+
+.mbooox {
+    display:none;
+    position:absolute;
+    z-index:11;
+    opacity:0.0;
+    filter: alpha(opacity=0);
+    bottom: 100px;
+    left: 90px;
+    background-color:white ;
+}
+
+.mboooox {
+    display:none;
+    position:absolute;
+    z-index:11;
+    opacity:0.0;
+    filter: alpha(opacity=0);
+    bottom: 20px;
+    left: 140px;
+    background-color:white ;
+}
+
+.mbooooox {
+    display:none;
+    position:absolute;
+    z-index:11;
+    opacity:0.0;
+    filter: alpha(opacity=0);
+    bottom: 50px;
+    left: 200px;
+    background-color:white ;
+}
+
+#modalContainer {
+	background-color:rgba(0, 0, 0, 0.3);
+	position:absolute;
+	width:100%;
+	height:100%;
+	top:0px;
+	left:0px;
+	z-index:10000;
+}
+
+#alertBox {
+	position:relative;
+	width:300px;
+	min-height:100px;
+	margin-top:100px;
+	border:1px solid crimson;
+	background-color:black;
+	background-repeat:no-repeat;
+	background-position:20px 30px;
+}
+
+#modalContainer > #alertBox {
+	position:fixed;
+}
+
+#alertBox h1 {
+	margin:0;
+	font:bold 0.9em verdana,arial;
+	background-color: black;
+	color:crimson;
+	border-bottom:1px solid crimson;
+    padding:10px 0 10px 25px;
+    text-align: center;
+}
+
+#alertBox p {
+	font:0.7em verdana,arial;
+	height:50px;
+	padding-left:5px;
+    margin-left:55px;
+    color: black;
+}
+
+#alertBox #closeBtn {
+	display:block;
+	position:relative;
+	margin:5px auto;
+	padding:7px;
+	width:120px;
+	font:0.9em verdana,arial;
+	text-transform:uppercase;
+	text-align:center;
+	color: black;
+	background-color: crimson;
+    border-radius: 3px;
+    text-decoration: none;
+    border: solid black;
+}
