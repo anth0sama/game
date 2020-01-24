@@ -107,3 +107,14 @@ function Redirect() {
   window.location = "/game/room2.html";
 }
 
+
+
+
+
+
+
+
+
+
+
+
